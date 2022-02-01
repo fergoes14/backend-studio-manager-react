@@ -4,8 +4,9 @@ export class User extends Document {
     name: String;
     email: String;
     password: String;
-    studio: [];
+    studio: String;
     refreshtoken: string;
     refreshtokenexpires: string;
+    photos:string;
 
 }

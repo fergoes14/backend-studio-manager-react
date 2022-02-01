@@ -98,7 +98,7 @@ export class AlunosController {
 
     @UseGuards(JtwAuthGuard)
     @Delete(':id')
-    async delete(@Param('id') id: string) {
+    async delete(@Param('id') id:string) {
         this.alunosServices.delete(id);
     }
 

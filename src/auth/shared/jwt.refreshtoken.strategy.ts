@@ -37,7 +37,8 @@ export class JwtRefreshTokenStrategy extends PassportStrategy(Strategy,"jwt-refr
       id: payload.sub,
       email: payload.email,
       studio: payload.studio,
-      name: payload.name
+      name: payload.name,
+      photos: payload.photos
 
       
     

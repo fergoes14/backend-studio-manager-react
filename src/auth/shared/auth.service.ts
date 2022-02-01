@@ -25,8 +25,8 @@ export class AuthService {
         const user = await this.usersService.getByEmail(userEmail);
         
         if (user && user.password === userPassword) {
-            const { _id, name, email, studio:studio } = user;
-            return { id: _id, name, email, studio:studio };
+            const { _id, name, email, studio:studio, photos:photos } = user;
+            return { id: _id, name, email, studio:studio, photos:photos };
             
         }
 
@@ -34,7 +34,7 @@ export class AuthService {
     }
 
     async login(user: any, ){
-        const payload = {email: user.email, sub:user.id, studio:user.studio, name:user.name};
+        const payload = {email: user.email, sub:user.id, studio:user.studio, name:user.name, photos: user.photos};
         return{
             access_token: this.jwtService.sign(payload),
             refreshToken: await this.generateRefreshToken(user.id),
@@ -42,7 +42,7 @@ export class AuthService {
             email:user.email,
             userId:user.id,
             studio:user.studio,
-            
+            photos:user.photos,
             
            
         };

@@ -26,4 +26,5 @@ export class CreateUsersDto {
  
    
     refreshtokenexpires:string;
+    photos:string
 }
