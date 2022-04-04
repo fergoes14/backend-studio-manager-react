@@ -19,7 +19,6 @@ export class Aluno extends Document {
     numero:String;
     ativo:Number;
     inativo:Number;
+    complemento:string;
     studio:string ;
-
-
 }

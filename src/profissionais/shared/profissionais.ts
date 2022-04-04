@@ -1,6 +1,7 @@
 import { Document } from "mongoose";
 
 export class Profissionais extends Document {
+    title:String;
     name: String;
     id: String;
     bgColor: String;

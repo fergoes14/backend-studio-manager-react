@@ -17,7 +17,7 @@ export const AlunoSchemas = new mongoose.Schema({
     numero: { type: String, },
     ativo:Number,
     inativo:Number,
-
+    complemento:String,
     studio:{
         type: mongoose.Schema.Types.ObjectId,
         ref:'Studios',
@@ -27,3 +27,4 @@ export const AlunoSchemas = new mongoose.Schema({
 
 
 })
+

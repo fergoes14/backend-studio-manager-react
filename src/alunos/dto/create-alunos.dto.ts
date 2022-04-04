@@ -5,7 +5,7 @@ import { IsString, IsNotEmpty, IsNumber, } from "class-validator";
 export class CreateAlunosDto {
     @IsNotEmpty({ message: 'Campo Nome não pode estar vazio' })
     nome: String;
-    
+
     @IsString({ message: 'Campo Nascimento não pode estar vazio' })
     nascimento: String;
 
@@ -32,8 +32,8 @@ export class CreateAlunosDto {
     numero: String;
 
     ativo: Number;
-
+    
     inativo: Number;
-
+    complemento: string;
     studio: string;
 }

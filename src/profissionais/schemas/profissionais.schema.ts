@@ -1,6 +1,10 @@
 import * as mongoose from 'mongoose'
 
 export const ProfissionaisSchema = new mongoose.Schema({
+    title:{
+        type:String,
+        default:'prof'
+    },
     name: String,
     id: String,
     bgColor: String,
@@ -33,6 +37,6 @@ export const ProfissionaisSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Studios',
         required: true,
-        default: '614e013ae9cb5ba9c74e51d6'
+        
     }
 })

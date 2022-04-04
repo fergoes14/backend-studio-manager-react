@@ -16,6 +16,7 @@ export class CreateSchedulesDto {
     isAllDay: Boolean;
     location: String;
     state: String;
-    studio:String;
-    isVisible:Boolean;
+    sala: string;
+    studio: String;
+    isVisible: Boolean;
 }

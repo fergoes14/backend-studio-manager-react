@@ -16,6 +16,7 @@ export class Schedule extends Document {
     isAllDay: Boolean;
     location: String;
     state: String;
+    sala:string;
     studio:String;
-    isVisible:Boolean;
+   isVisible:Boolean;
 }

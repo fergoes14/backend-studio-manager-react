@@ -3,6 +3,7 @@ import { IsNotEmpty } from "class-validator";
 
 
 export class CreateProfissionalDto {
+    title:String;
     @IsNotEmpty({ message: 'Preencha corretamente o campo Nome' })
     name: String;
     

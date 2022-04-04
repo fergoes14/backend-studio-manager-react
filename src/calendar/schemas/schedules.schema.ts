@@ -16,6 +16,8 @@ export const ScheduleSchema = new mongoose.Schema({
     isAllDay: Boolean,
     location: String,
     state: String,
+    sala:String,
+    complemento:String,
     studio: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Studios',

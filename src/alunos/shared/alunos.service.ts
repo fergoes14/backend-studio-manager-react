@@ -16,7 +16,6 @@ export class AlunosService {
     async getAll(studioId: string) {
         return await this.alunoModel.find({
             'studio': studioId
-
         }).exec()
 
     }
