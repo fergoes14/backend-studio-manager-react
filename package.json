@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "prestart": "next build",
-    "heroku-postbuild": "NODE_ENV=dev npm install --omit --no-shrinkwrap && npm run build",
+    "heroku-postbuild": "npm run build",
+    "prestart": "nest build",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
