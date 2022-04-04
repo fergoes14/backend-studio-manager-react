@@ -11,7 +11,9 @@ export const photoSchema = new mongoose.Schema({
 export const userSchemas = new mongoose.Schema({
     
     name: String,
-    email: String,
+    email: {
+        type: String
+    },
     password: String,
     refreshtoken: String,
     refreshtokenexpires: String,
