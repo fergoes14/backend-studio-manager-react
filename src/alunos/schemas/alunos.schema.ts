@@ -18,6 +18,7 @@ export const AlunoSchemas = new mongoose.Schema({
     ativo:Number,
     inativo:Number,
     complemento:String,
+    sexo:String,
     studio:{
         type: mongoose.Schema.Types.ObjectId,
         ref:'Studios',
