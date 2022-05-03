@@ -21,5 +21,6 @@ export class Aluno extends Document {
     inativo:Number;
     complemento:string;
     sexo:string;
+    cpf:string;
     studio:string ;
 }

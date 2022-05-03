@@ -37,5 +37,6 @@ export class CreateAlunosDto {
     complemento: string;
     @IsNotEmpty({ message: 'Complete corretamento o campo sexo' })
     sexo:string;
+    cpf:string;
     studio: string;
 }
